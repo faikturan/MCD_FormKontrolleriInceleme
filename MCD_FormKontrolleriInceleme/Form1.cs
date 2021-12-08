@@ -16,5 +16,26 @@ namespace MCD_FormKontrolleriInceleme
         {
             InitializeComponent();
         }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            DialogResult resultEnum = MessageBox.Show("Form içerisinde bulunan değerleri silmek istediğinizden emin misiniz?", "Form temizleme işlemi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultEnum == DialogResult.Yes)
+            {
+                formTemizle();
+                formElemanIndexTemizle();
+            }
+        }
+
+        private void formElemanIndexTemizle()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void formTemizle()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

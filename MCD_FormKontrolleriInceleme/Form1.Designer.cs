@@ -139,6 +139,7 @@ namespace MCD_FormKontrolleriInceleme
             this.btnTemizle.TabIndex = 3;
             this.btnTemizle.Text = "Temizle";
             this.btnTemizle.UseVisualStyleBackColor = true;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // Form1
             // 
