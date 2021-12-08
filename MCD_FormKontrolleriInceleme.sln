@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCD_FormKontrolleriInceleme", "MCD_FormKontrolleriInceleme\MCD_FormKontrolleriInceleme.csproj", "{BAFDC568-5FC6-4B94-9D23-67E34408E26F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAFDC568-5FC6-4B94-9D23-67E34408E26F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFDC568-5FC6-4B94-9D23-67E34408E26F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFDC568-5FC6-4B94-9D23-67E34408E26F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFDC568-5FC6-4B94-9D23-67E34408E26F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F718257A-6A93-4EA9-BBEE-3DE455589134}
+	EndGlobalSection
+EndGlobal
