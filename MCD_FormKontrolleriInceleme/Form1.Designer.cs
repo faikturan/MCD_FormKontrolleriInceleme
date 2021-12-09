@@ -119,6 +119,7 @@ namespace MCD_FormKontrolleriInceleme
             this.btnOnizleme.TabIndex = 3;
             this.btnOnizleme.Text = "Önizleme Yap";
             this.btnOnizleme.UseVisualStyleBackColor = true;
+            this.btnOnizleme.Click += new System.EventHandler(this.btnOnizleme_Click);
             // 
             // btnKaydet
             // 
@@ -129,6 +130,7 @@ namespace MCD_FormKontrolleriInceleme
             this.btnKaydet.TabIndex = 3;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // btnTemizle
             // 
@@ -159,6 +161,7 @@ namespace MCD_FormKontrolleriInceleme
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Müşteri Uygulaması";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

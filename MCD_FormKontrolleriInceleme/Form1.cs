@@ -23,19 +23,54 @@ namespace MCD_FormKontrolleriInceleme
 
             if (resultEnum == DialogResult.Yes)
             {
-                formTemizle();
+                //formTemizle();
                 formElemanIndexTemizle();
+            }
+            else
+            {
+                //  işlem iptal edildi....
+            }
+        }
+
+        private void formTemizle()
+        {
+            foreach (Control item in this.Controls)
+            {
+                if (item is TextBox) //item control == TexBox
+                {
+                    TextBox T = (TextBox)item;
+                    T.Text = string.Empty;
+                }
             }
         }
 
         private void formElemanIndexTemizle()
         {
-            throw new NotImplementedException();
+            ((TextBox)this.Controls["txtIsim"]).Text = string.Empty;
+            ((TextBox)this.Controls["txtSoyisim"]).Text = string.Empty;
+            ((TextBox)this.Controls["txtEmailAdres"]).Text = string.Empty;
+            ((TextBox)this.Controls["txtTelefonNumara"]).Text = string.Empty;
         }
 
-        private void formTemizle()
+        private void Form1_Load(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+
+        }
+
+        private void btnOnizleme_Click(object sender, EventArgs e)
+        {
+            frmOnizlemeKayit onizlemeKayit = new frmOnizlemeKayit();
+            ((TextBox)onizlemeKayit.Controls["txtIsim"]).Text = txtIsim.Text;
+            ((TextBox)onizlemeKayit.Controls["txtSoyisim"]).Text = txtSoyisim.Text;
+            ((TextBox)onizlemeKayit.Controls["txtEmailAdres"]).Text = txtEmailAdres.Text;
+            ((TextBox)onizlemeKayit.Controls["txtTelefonNumara"]).Text = txtTelefonNumara.Text;
+            onizlemeKayit.ShowDialog();
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            //sanal database içerisine kayıt işlemi olacak...(ödev)
+            //formTemizle();
         }
     }
 }
